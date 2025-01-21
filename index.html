@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
-    <title>NavBar By Doucode_Programming</title>
+    <title>NavBar By Doucode</title>
   </head>
   <body>
     <nav class="navbar">
@@ -15,7 +15,7 @@
         <a href="#">Services</a>
         <a href="#">Contact</a>
       </div>
-      <div class="navbar-toggle" onclick="toggleMenu()">
+      <div class="navbar-toggle" id="navbar-toggle">
         <span></span>
         <span></span>
         <span></span>
@@ -28,11 +28,6 @@
       </div>
     </nav>
 
-    <script>
-      function toggleMenu() {
-        const slideMenu = document.getElementById("navbar-slide");
-        slideMenu.classList.toggle("active");
-      }
-    </script>
+    <script src="script.js"></script>
   </body>
 </html>
