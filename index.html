@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>NavBar By Doucode</title>
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="navbar-logo">Doucode</div>
+      <div class="navbar-links">
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Contact</a>
+      </div>
+      <div class="navbar-toggle" onclick="toggleMenu()">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <div class="navbar-slide" id="navbar-slide">
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Contact</a>
+      </div>
+    </nav>
+
+    <script>
+      function toggleMenu() {
+        const slideMenu = document.getElementById("navbar-slide");
+        slideMenu.classList.toggle("active");
+      }
+    </script>
+  </body>
+</html>
